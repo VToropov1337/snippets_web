@@ -20,7 +20,6 @@ func showSnippet(w http.ResponseWriter, r *http.Request) {
 		http.NotFound(w, r)
 		return
 	}
-	fmt.Print("----", id)
 	fmt.Fprintf(w, "Show exactly id - %d\n\n", id)
 }
 
